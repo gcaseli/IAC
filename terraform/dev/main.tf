@@ -2,7 +2,7 @@ module "extract_process_lambda" {
   source = "../modules/extract-process-lambda/"
   
   role_arn = "arn:aws:iam::956852603459:role/lambda_role"
-  memory_size = 1024
+  memory_size = 100
   timeout = 900
   tags = "${var.common_tags}"
 }
